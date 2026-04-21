@@ -29,7 +29,7 @@ resource "azurerm_subnet" "db_subnet" {
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = ["10.0.3.0/24"]
 
-   private_endpoint_network_policies_enabled = false
+  #private_endpoint_network_policies_enabled = false
 }
 
 # VMSS Network Security Group
